@@ -17,9 +17,7 @@ const raisedToTheThird = (arr) => {
   });
   return newArr;
 }
-let newArr=[2, 4, 5, -7, 0];
-// expect(raisedToTheThird([2, 4, 5, -7, 0])).toStrictEqual([8, 64, 125, -343, 0]);
-console.log(raisedToTheThird(newArr))
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -29,8 +27,10 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
-  // Solution code here...
+let newStr=str+' The end.';
+return newStr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -46,8 +46,10 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
+arr.push(arr[0]);
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -65,8 +67,12 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  // Solution code here...
+  obj['yearBorn']=year;
+  console.log()
 };
+const octavia = { fullName: 'Octavia Estelle Butler' };
+addBirthYearProperty(octavia, 1947);
+console.log(octavia); 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
