@@ -42,12 +42,11 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 
 const allUpperCase = (arr) => {
   let newArr=[];
-  arr.forEach(element =>{newArr.push(element.toUpperCase)})
+  arr.forEach(element =>{newArr.push(element.toUpperCase())})
   return newArr;
 
 
 };
-console.log(allUpperCase(['hi', 'how', 'are', 'you']));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -60,12 +59,17 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+  return word.toUpperCase()+'!';
 };
 
 const speaker = (words, callback) => {
-  // Solution code here...
+  let newArr=[];
+  words.forEach(element=>{
+    newArr.push(callback(element)); 
+  })
+  return newArr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -84,12 +88,24 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+for (let i=0;i<times;i++){
+  callback(arr,num);
+}
+return arr;
+
 };
+console.log(addNumbers(8, [], 5, addValues));
+//
+// describe('Testing challenge 5', () => {
+//   test('It should add the number 8 to the array five times', () => {
+//     expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
+//     expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
+//   });
+// });
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -110,8 +126,16 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let newArr=[];
+  availableItems.forEach(element=>{
+   if(element.available){
+     newArr.push(element.name);
+   } 
+  })
+  return newArr;
+
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
