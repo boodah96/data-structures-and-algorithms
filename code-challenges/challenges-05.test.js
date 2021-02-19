@@ -24,20 +24,22 @@ let starWarsPeople = [
   }
 ];
 
-const sortStarWarsCharacters = (starWarsArr) => {
+const sortStarWarsCharacters = (arr) => {
 
-starWarsArr.sort((a,b)=>{
-  if (a.height>b.height){
-    return 1;
-
-  }else if (a.height<b.height){
-    return -1 ;
-
-  }else return0;
+  arr.sort((a,b)=>{
+    if (parseInt(a.height)>parseInt(b.height)){
+      return -1;
+  
+    }else if (parseInt(a.height)<parseInt(b.height)){
+      return 1 ;
+  
+    }else return 0; 
+  
 })
+return arr;
 }
-sortStarWarsCharacters(starWarsPeople);
 console.log(starWarsPeople);
+console.log(sortStarWarsCharacters(starWarsPeople));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -46,8 +48,10 @@ Write a function named removeThree that takes an index and an array. The functio
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => {
-  // Solution code here...
+  arr.splice(idx,3);
+  return arr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -56,7 +60,9 @@ Write a function named joinArray that takes an array and joins all of the elemen
 ------------------------------------------------------------------------------------------------ */
 
 const joinArray = (arr) => {
-  // Solution code here...
+  return   arr.join(' ');
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -73,11 +79,14 @@ For example, if the input is 'Welcome', the output will be:
 ------------------------------------------------------------------------------------------------ */
 
 const howMuchPencil = (str) => {
-  let result = [];
-  // Solution code here...
+  let result = [str];
+while(str!=='' ){
+  str=str.slice(1);
+  result.push(str);
+
+  }
   return result;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -86,10 +95,19 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-const wordsToCharList = (arr) => {
-  // Solution code here...
+const wordsToCharList = (str) => {
+  console.log(str.split(''));
+  return str.split('') ;
 };
-
+wordsToCharList('abood');
+// describe('Testing challenge 5', () => {
+//   test('It should return an array of individual letters', () => {
+//     expect(wordsToCharList('Gregor')).toStrictEqual(['G', 'r', 'e', 'g', 'o', 'r']);
+//     expect(wordsToCharList('Gregor').length).toStrictEqual(6);
+//     expect(wordsToCharList('hooray')).toStrictEqual(['h', 'o', 'o', 'r', 'a', 'y']);
+//     expect(wordsToCharList('')).toStrictEqual([]);
+//   });
+// });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -131,12 +149,19 @@ const gruffaloCrumble = {
   ]
 };
 
-
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach(element=>{
+    let sp=element.split(' ');
+    sp.shift();
+        sp.shift();
+
+        result.push(sp.join(' '));
+  })
+console.log(result);
   return result;
 };
+listFoods(gruffaloCrumble);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
