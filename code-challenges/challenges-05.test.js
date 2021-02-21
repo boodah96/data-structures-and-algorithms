@@ -161,7 +161,6 @@ const listFoods = (recipe) => {
 console.log(result);
   return result;
 };
-listFoods(gruffaloCrumble);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
