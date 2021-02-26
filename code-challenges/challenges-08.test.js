@@ -79,10 +79,10 @@ Write a function named filterStringsWithVowels that, given an array of strings a
 The callback function to filter should include or utilize a regular expression pattern.
 
 For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 'hound'].
------------------------------------------------------------------------------------------------- */
+---------------------'a', 'e', 'i', 'o', 'u'--------------------------------------------------------------------------- */
 
 const filterStringsWithVowels = (arr) => {
-let reg=/[a,e,i,o]/g;
+let reg=/[aeiou]/;
 let newArr=arr.filter(elment=>{
   if(elment.match(reg)){
     return true;
@@ -90,6 +90,7 @@ let newArr=arr.filter(elment=>{
 })
 return newArr;
 };
+console.log(filterStringsWithVowels(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '']));
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -108,7 +109,6 @@ const notInFirstArray = (forbiddenValues, arr) => {
   })
 
   return newArr;};
-  console.log(notInFirstArray([1,2,3], [1,2,3,4]));
 
 
 /* ------------------------------------------------------------------------------------------------
