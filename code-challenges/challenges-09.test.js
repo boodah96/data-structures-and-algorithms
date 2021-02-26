@@ -19,9 +19,13 @@ Becomes:
 ------------------------------------------------------------------------------------------------ */
 
 function transformToLis(obj){
-  // Solution code here...
+let arrayOfObj=Object.entries(obj)
+let arr=arrayOfObj.map(val=>{
+  return `<li>${val[0]}: ${val[1]}</li>`
+})
+return arr;
 }
-
+ 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -30,7 +34,10 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
-  // Solution code here...
+  let sum =arr.reduce((acc,val,i)=>{
+    return acc+val;
+  },0)
+  return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,9 +53,9 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
-  // Solution code here...
+  return arr.reduce((acc,obj,i)=> acc+obj.purchasePrice,0);
+   
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -58,7 +65,9 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+  let index=arr.reduce((acc,val,i)=>acc+1,0)
+  return index;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,8 +127,14 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+
+let names=arr.reduce((acc,val,i)=>{
+  acc[i]=val.name
+  return acc;
+},[])
+return names;
 };
+console.log(returnNames(starWarsData));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -130,7 +145,15 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  let str2=str.split('');
+  
+  
+let rev=str2.reduce((acc,val,i)=>{
+
+acc=acc+str2[str2.length-i-1];
+  return acc;
+  },'')
+return rev;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -358,3 +381,4 @@ xdescribe('Testing challenge 11', () => {
     expect(extractChildren(characters).length).toStrictEqual(10);
   });
 });
+
