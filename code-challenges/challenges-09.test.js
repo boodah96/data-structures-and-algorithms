@@ -155,7 +155,6 @@ acc=acc+str2[str2.length-i-1];
   },'')
 return rev;
 };
-console.log(reversedString('Code 301'));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
