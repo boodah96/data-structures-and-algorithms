@@ -55,9 +55,16 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-  // Solution code here...
-};
+  let newArr=[];
+  matrix.forEach(element => {
+    element.forEach(val=>newArr.push(val))
 
+  });
+
+  return newArr.reduce((acc,val,i)=>{
+    return acc+=val;
+  },0);
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -82,7 +89,11 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
+  let newARR=[];
+  stores.map(branch=>{
+
+    
+  })
 
 };
 
