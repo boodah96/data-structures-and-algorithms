@@ -89,13 +89,17 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  let newARR=[];
-  stores.map(branch=>{
-
+  let newARR=hoursOpen.map((hour,i)=>{
+    return stores.reduce((acc,branch)=>{
+      return acc+=branch[i];
+    },0)
     
   })
+  
+return newARR;
 
-};
+  };
+  console.log(grandTotal(cookieStores));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -108,9 +112,15 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  let newArr=[];
+  hours.forEach((hour,i)=>{
+    let obj={};
+    obj['sales']=data[i]+' cookies';
+    obj['time']=hour;
+newArr.push(obj);  })
+  return newArr;
 };
-
+console.log(salesData(hoursOpen, grandTotal(cookieStores)));
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -133,9 +143,17 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
-};
+  let nOfTreats=0;
+  arr.forEach(obj=>{
+    obj.items.forEach(childObj=>{
+      nOfTreats+=(childObj.name==='Treats') ? childObj.quantity:0;
+    }
+    )
 
+  })
+  return nOfTreats;
+};
+console.log(howManyTreats(errands))
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
