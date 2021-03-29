@@ -14,4 +14,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 |  Challenge     |       link     |
 | -------------- | -------------- |
-|      CC02      |  [CC02]()              |
+|      CC02      |  [CC02](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/arrayShift)      |
