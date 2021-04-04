@@ -1,5 +1,7 @@
 'use strict';
 
+module.exports = { function: insertShiftArray };
+
 function insertShiftArray(arr, n) {
     let middArr;
     if (arr.length % 2 === 0) { middArr = parseInt(arr.length / 2); } else {
