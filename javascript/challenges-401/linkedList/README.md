@@ -12,3 +12,9 @@ and each function do specific approach
 - insert() : function add a new nodes into the head of linked list.
 - includes(value): function check if have the value in the linked list.
 -  toString(): function will print all the values inside the linked list
+- append(value):add a new  node with the given value to the end of the list
+- insertBefor(value,newVal):which add a new node with the given newValue immediately before the value node
+- insertAfter(value,new val):which add a new node with the given newValue immediately after the value node
+
+![Whitebord](../assets/CC06.PNG)
+
