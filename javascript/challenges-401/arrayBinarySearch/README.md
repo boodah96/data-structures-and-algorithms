@@ -18,4 +18,4 @@ sorted array and  value
 - space O(1)
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![WB](../assets/cc03.PNG)
