@@ -12,6 +12,7 @@ describe('linked list test', () => {
     test('Can properly insert into the linked list', () => {
 
         ll.insert(10);
+
         expect(ll.head.value).toEqual(10);
     });
 
@@ -19,6 +20,7 @@ describe('linked list test', () => {
 
         ll.insert(10);
         ll.insert(50);
+
         expect(ll.head.value).toEqual(50);
     });
     test('Can properly insert multiple nodes into the linked list', () => {

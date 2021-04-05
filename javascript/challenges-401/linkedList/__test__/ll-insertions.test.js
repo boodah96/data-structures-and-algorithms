@@ -25,7 +25,6 @@ describe('linked list test', () => {
 
 
         ll.insertBefore(5, 12);
-        console.log(ll.head);
 
 
         expect(ll.head.next.next.value).toEqual(12);
@@ -35,8 +34,8 @@ describe('linked list test', () => {
 
 
         ll.insertBefore(2, 12);
-
         expect(ll.head.value).toEqual(12);
+
 
     });
     test('Can successfully insert after a node in the middle of the linked list', () => {
@@ -51,8 +50,9 @@ describe('linked list test', () => {
 
 
         ll.insertAfter(6, 7);
-
+        console.log(ll.kthFromEnd(7))
         expect(ll.head.next.next.next.next.next.next.next.value).toEqual(7);
+
 
     });
 

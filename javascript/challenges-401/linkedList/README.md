@@ -15,6 +15,17 @@ and each function do specific approach
 - append(value):add a new  node with the given value to the end of the list
 - insertBefor(value,newVal):which add a new node with the given newValue immediately before the value node
 - insertAfter(value,new val):which add a new node with the given newValue immediately after the value node
+- kthFromEnd(k) : Return the node’s value that is k from the end of the linked list
 
 ![Whitebord](../assets/CC06.PNG)
+
+-
+
+## Code Challenge 7 WB
+
+
+
+-
+
+![WB7](../assets/CC07.PNG)
 
