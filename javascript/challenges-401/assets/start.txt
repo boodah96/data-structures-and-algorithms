@@ -1,0 +1,3 @@
+ npm init -y
+npm i express dotenv cors morgan mongoose eslint
+mongodb+srv://boodah96:<password>@cluster0.rkxyz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
