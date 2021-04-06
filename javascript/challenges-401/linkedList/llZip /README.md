@@ -15,25 +15,8 @@ list1 list2
 #### Big O
 - time: O(n) 
 - space: O(1)
-## API
-- space:
-- insert() : function add a new nodes into the head of linked list.
-- includes(value): function check if have the value in the linked list.
--  toString(): function will print all the values inside the linked list
-- append(value):add a new  node with the given value to the end of the list
-- insertBefor(value,newVal):which add a new node with the given newValue immediately before the value node
-- insertAfter(value,new val):which add a new node with the given newValue immediately after the value node
-- kthFromEnd(k) : Return the node’s value that is k from the end of the linked list
 
-![Whitebord](../assets/CC06.PNG)
-
--
-
-## Code Challenge 7 WB
+![Whitebord](../../assets/cc08.PNG)
 
 
-
--
-
-![WB7](../assets/CC07.PNG)
 
