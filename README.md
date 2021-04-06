@@ -14,9 +14,10 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 |  Challenge     |       link     |
 | -------------- | -------------- |
-| arrayReverse   | [CC01](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/arrayReverse)     |
-|      CC02      | [CC02](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/arrayShift)       |
-|      CC03      | [CC03](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/arrayBinarySearch)|
-|   linked list  | [CC05](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList)       |
-| ll-insertions  | [CC06](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList)       |
-|ll-kth-from-end | [CC07](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList)       |
+| arrayReverse   | [CC01](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/arrayReverse)       |
+|      CC02      | [CC02](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/arrayShift)         |
+|      CC03      | [CC03](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/arrayBinarySearch)  |
+|   linked list  | [CC05](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList)         |
+| ll-insertions  | [CC06](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList)         |
+|ll-kth-from-end | [CC07](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList)         |
+|    ziplist     | [CC08](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList/llZip%20)|
