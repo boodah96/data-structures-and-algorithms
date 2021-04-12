@@ -1,5 +1,5 @@
 'use strict';
-let { Stack } = require('../stack-and-queue/stack-and-queue.js')
+const { Stack } = require('../stacksAndQueues/stacks-and-queues')
 
 class PseudoQueue {
     constructor() {
@@ -11,6 +11,18 @@ class PseudoQueue {
         this.stack1.push(value);
     };
     dequeue() {
+        if (!this.stack1.top && !this.stack2.top) {
+            return 'empty';
+        } else if (!this.stack2.top) {
+            while (this.stack1.top) {
+                this.stack2.push(this.stack1.pop());
+            }
+            return this.stack2.pop();
+
+
+        }
 
     };
 }
+
+module.exports = PseudoQueue;
