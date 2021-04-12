@@ -21,3 +21,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | ll-insertions  | [CC06](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList)         |
 |ll-kth-from-end | [CC07](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList)         |
 |    ziplist     | [CC08](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/linkedList/llZip%20)|
+|Stack and Queue | [CC10](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/stacksAndQueues)    |
+|QueueWithStacks | [CC11](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/QueueWithStacks)    |
