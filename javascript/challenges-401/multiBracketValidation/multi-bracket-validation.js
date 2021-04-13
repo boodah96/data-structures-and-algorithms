@@ -14,12 +14,10 @@ function multiBracketValidation(str) {
             if (str[i] === ']' && curly === 0 && round === 0) { if (square > 0) { square-- } else { return false }; }
             if (str[i] === '}' && square === 0 && round === 0) { if (curly > 0) { curly-- } else { return false }; }
             if (str[i] === ')' && square === 0 && curly === 0) { if (round > 0) { round-- } else { return false }; }
-
-
         }
         if (round === 0 && curly === 0 && square === 0) {
             return true;
         } else { return false };
     }
     return curly;
-}
+};
