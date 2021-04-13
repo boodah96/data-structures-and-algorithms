@@ -24,3 +24,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |Stack and Queue | [CC10](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/stacksAndQueues)    |
 |QueueWithStacks | [CC11](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/QueueWithStacks)    |
 |AnimalShelter   | [CC12](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/fifoAnimalShelter)  |
+|multiBracketValidation| [CC13](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/multiBracketValidation)  |
