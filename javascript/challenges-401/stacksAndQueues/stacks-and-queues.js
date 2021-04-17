@@ -55,6 +55,18 @@ class Stack {
         }
     };
 
+    getmax() {
+        let max = this.top.value;
+        let current = this.top;
+        while (current) {
+            if (current.value > max) {
+                max = current.value;
+            }
+            current = current.next
+        }
+        return max;
+    }
+
 }
 
 
