@@ -6,8 +6,8 @@ A tree whose elements have at most 2 children is called a binary tree. Since eac
 - Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+- add method: adding a value to the tree after checking the root.
+- contains method: return true if the tree contain the value after searching.
 ## API
 
 
