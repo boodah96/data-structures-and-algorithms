@@ -1,6 +1,6 @@
 'use strict';
 
-function multiBracketValidation(str) {
+module.exports = function multiBracketValidation(str) {
     if (typeof str !== 'string') { return false };
     let reg = /[{[(]/g
     let round = 0;
@@ -19,5 +19,5 @@ function multiBracketValidation(str) {
             return true;
         } else { return false };
     }
-    return curly;
+
 };
