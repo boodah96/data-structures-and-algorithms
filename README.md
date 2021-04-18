@@ -26,3 +26,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |AnimalShelter   | [CC12](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/fifoAnimalShelter)  |
 |multiBracketValidation| [CC13](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/multiBracketValidation)  |
 |tree| [CC15](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/tree)|
+|tree| [CC16](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/BinaryTree)|
