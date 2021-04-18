@@ -54,7 +54,7 @@ class BinaryTree {
     }
     findMaximumValue() {
         if (!this.root) {
-            return ' empty tree';
+            return ' there is no root';
         }
         let array = this.postOrder();
         let max = this.root.value;
