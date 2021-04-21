@@ -1,5 +1,5 @@
 'use strict';
-'use strict';
+
 
 class Node {
     constructor(value, left = null, right = null) {
