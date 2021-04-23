@@ -51,6 +51,65 @@ class BinaryTree {
         _traverse(this.root);
         return results;
     }
+
 }
 
-module.exports = BinaryTree;
+class BinarySearchTree {
+    constructor(root = null) {
+        this.root = root;
+    }
+
+    add(value) {
+        let newNode = new Node(value)
+        const binaryAdd = (node, newNode) => {
+            if (newNode.value < node.value) {
+                if (!node.left) {
+                    node.left = newNode;
+                } else {
+                    binaryAdd(node.left, newNode);
+                }
+
+            } else if (!node.right) {
+                node.right = newNode;
+            } else {
+                binaryAdd(node.right, newNode);
+            }
+        }
+
+        if (!this.root) {
+            this.root = newNode;
+            return;
+        } else {
+            binaryAdd(this.root, newNode);
+        }
+
+
+
+
+    }
+    contains(value) {
+
+        const search = (value, node = null) => {
+            if (node === null) {
+                return false;
+            } else if (value < node.value) {
+                return search(value, node.left);
+
+            } else if (value > node.value) {
+                return search(value, node.right)
+            } else return true;
+        }
+        if (!this.root) {
+            return false;
+        } else {
+            return search(value, this.root)
+        }
+    }
+
+
+}
+
+
+
+
+module.exports = { BinaryTree, Node, BinarySearchTree };
