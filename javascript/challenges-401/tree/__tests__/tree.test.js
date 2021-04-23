@@ -52,6 +52,10 @@ describe('tree test', () => {
         expect(node.left).toBeNull();
         expect(node.right).toBeNull();
     });
+    it('Can successfully return the max value correctly', () => {
+        const max = tree.findMaximumValue();
+        expect(max).toEqual(8);
+    });
 
 
 })
