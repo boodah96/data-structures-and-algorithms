@@ -17,6 +17,8 @@ A tree whose elements have at most 2 children is called a binary tree. Since eac
 - add method: add a value to the tree
 - contains method: return true if the tree contain the value.
 
+_____________________________________________________________________________________
+
 # CC16 FindMaxValue
 
 ### Challenge Summary
@@ -36,3 +38,29 @@ the tree
 - space: O(n)
 ### Solution
 ![WB](../assets/cc16.PNG)
+
+________________________________________________________________________________________
+
+# CC17 Breadth First
+
+### Challenge Summary
+- breadth first traversal method
+### Challenge Description
+breadth first traversal method which takes a Binary Tree as
+its unique input. and return a list of the values in the tree in the order 
+they were encountered.
+### Approach & Efficiency
+- create breadthFirst function
+declare a three variable arr, queue and current
+- current represnt the root
+-  iqueue we will save the current 
+- while loob in each itreation
+      - take the first item from the queue
+      - add the cureent valye to the arr
+      - add the left and right if it exists
+- return the array 
+### Big O:
+- Time: O(n)
+- space: O(n)
+### Solution
+![WB](../assets/cc17.PNG)
