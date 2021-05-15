@@ -31,4 +31,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |fizzBuzz| [CC18](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/fizzBuzzTree)|
 |insertion sort| [CC26](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/InsertionSort)|
 |merge sort| [CC27](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/merge-sort)|
+|Quick sort| [CC28](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/quickSort)|
 |HashTable| [CC30](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/hashtable)|
