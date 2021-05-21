@@ -4,7 +4,6 @@ const { HashTable, LinkedList, Node } = require('../hashtable/hashtable');
 function repeatedWord(str) {
 
     let words = str.match(/\w+/g);
-    console.log(words);
     let hashtable = new HashTable();
     let outPut = "There is no duplicated words";
     for (let i = 0; i < words.length; i++) {
