@@ -34,5 +34,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |Quick sort| [CC28](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/quickSort)|
 |HashTable| [CC30](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/hashtable)|
 |HashTable| [CC30](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/hashtable)|
-|repeatedWord | [CC31](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/repeatedWord )|
+|repeatedWord | [CC31](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/repeatedWord)|
 |graph| [CC35](https://github.com/boodah96/data-structures-and-algorithms/tree/main/javascript/challenges-401/graph)|
